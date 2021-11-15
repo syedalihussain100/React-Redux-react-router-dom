@@ -8,3 +8,15 @@ ul{
   list-style-type: none;
 }
 
+button{
+  display: inline-block;
+  outline: none;
+  padding: 8px 10px;
+  background: crimson;
+  color: #fff;
+  border: none;
+  border:  1px solid black;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+}
