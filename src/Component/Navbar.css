@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.logo {
+    text-indent: 40px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    width: 100%;
+}
+
+header nav{
+    margin: 0px 20px;
+}
+
+.navlink {
+   color: red;
+}
+
+.link{
+    margin: 0px 40px;
+}
+
