@@ -6,31 +6,34 @@ import Location from "./Component/Location";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Services from './Component/Services';
+import { AuthContextProvider } from "./Component/Autentication/AuthContext";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/services">
-            <Services />
-          </Route>
-          <Route path="/location">
-            <Location />
-          </Route>
-          <Route path="*">
-            <ErrorPage />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <AuthContextProvider>
+      <Router>
+        <div>
+          <Navbar />
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/blog">
+              <Blog />
+            </Route>
+            <Route path="/services">
+              <Services />
+            </Route>
+            <Route path="/location">
+              <Location />
+            </Route>
+            <Route path="*">
+              <ErrorPage />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </AuthContextProvider>
   )
 }
 
