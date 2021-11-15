@@ -10,7 +10,7 @@ function Blog() {
     console.log('url', url)
     return (
         <div>
-            <ul>
+            <ul style={{margin:'10px',padding:'20px'}}>
                 <li><Link to={`${url}/apple`}>Apple</Link></li>
                 <li><Link to={`${url}/banana`}>Banana</Link></li>
                 <li><Link to={`${url}/mango`}>Mango</Link></li>
