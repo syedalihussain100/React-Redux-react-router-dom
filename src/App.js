@@ -9,6 +9,8 @@ import "./App.css";
 import Services from './Component/Services';
 import { AuthContextProvider } from "./Component/Autentication/AuthContext";
 import PrivateRoute from './Component/PrivateRoute';
+import Game from './Component/Game';
+import Winner from "./Component/Winner";
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
         <div>
           <Navbar />
           <Switch>
-            <Route path="/" exact component={Home}>
+            <Route path="/" exact>
               <Home />
             </Route>
             <Route path="/blog">
@@ -32,7 +34,13 @@ function App() {
             <PrivateRoute path="/admin">
               <Admin />
             </PrivateRoute>
-            <Route path="*">
+            <Route path="/game">
+              <Game />
+            </Route>
+            <Route path="/winner">
+              <Winner />
+            </Route>
+            <Route path="/*">
               <ErrorPage />
             </Route>
           </Switch>

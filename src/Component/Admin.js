@@ -1,5 +1,7 @@
-import { useContext } from 'react';
-import { AuthContext } from './Autentication/AuthContext';
+import React from 'react'
+
+// import { useContext } from 'react';
+// import { AuthContext } from './Autentication/AuthContext';
 // import { Redirect } from "react-router-dom";
 
 function Admin() {
@@ -9,7 +11,7 @@ function Admin() {
     // }
     return (
         <div>
-            <h1> Admin </h1>
+            <h1>This Page Is Admin!</h1>
         </div>
     )
 }
