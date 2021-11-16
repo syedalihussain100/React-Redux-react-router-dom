@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Services from './Component/Services';
 import { AuthContextProvider } from "./Component/Autentication/AuthContext";
+import PrivateRoute from './Component/PrivateRoute';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <div>
           <Navbar />
           <Switch>
-            <Route path="/" exact>
+            <Route path="/" exact component={Home}>
               <Home />
             </Route>
             <Route path="/blog">
@@ -28,9 +29,9 @@ function App() {
             <Route path="/location">
               <Location />
             </Route>
-            <Route path="/admin">
-              <Admin/>
-            </Route>
+            <PrivateRoute path="/admin">
+              <Admin />
+            </PrivateRoute>
             <Route path="*">
               <ErrorPage />
             </Route>
