@@ -4,9 +4,9 @@ import { Redirect } from "react-router-dom";
 
 function Admin() {
     const { isLogedin } = useContext(AuthContext);
-    if (!isLogedin) {
-        return <Redirect to="/" />
-    }
+    // if (!isLogedin) {
+    //     return <Redirect to="/" />
+    // }
     return (
         <div>
             <h1> Admin </h1>
