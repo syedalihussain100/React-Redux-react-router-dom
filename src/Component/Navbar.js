@@ -14,6 +14,7 @@ function Navbar() {
                     <NavLink to="/blog" activeClassName="navlink" className='link'>Blog</NavLink>
                     <NavLink to="/services" activeClassName="navlink" className='link'>Services</NavLink>
                     <NavLink to="/location" activeClassName="navlink" className='link'>Location</NavLink>
+                    <NavLink to="/admin" activeClassName="navlink" className='link'>Admin</NavLink>
                     <button onClick={() => setIsLogedIn(!isLogedin)}>{isLogedin ? "Logout" : "Login"}</button>
                 </nav>
             </header>

@@ -3,6 +3,7 @@ import Navbar from './Component/Navbar';
 import Home from "./Component/Home";
 import Blog from "./Component/Blog";
 import Location from "./Component/Location";
+import Admin from './Component/Admin';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Services from './Component/Services';
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route path="/location">
               <Location />
+            </Route>
+            <Route path="/admin">
+              <Admin/>
             </Route>
             <Route path="*">
               <ErrorPage />
